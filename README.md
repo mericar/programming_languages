@@ -6,11 +6,14 @@ The foundational work being used for study and reference: https://cs.brown.edu/c
 ## BNF for SimpleCompiler.java
 
 
-<expression> ::= <term> { ('+' | '-') <term> }
-<term> ::= <factor> { ('*' | '/') <factor> }
+```<expression> ::= <term> { ('+' | '-') <term> }`
+ <term> ::= <factor> { ('*' | '/') <factor> }
 <factor> ::= '(' <expression> ')' | <number>
 <number> ::= digit { digit }
 digit ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+```
+
+
 
 Here, the {} brackets denote zero or more repetitions, () brackets denote grouping, and | denotes a choice.
 
